@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBooking – Travel Search</title>
+    <link rel="stylesheet" href="Task_2.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Sky<span>Booking</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#pages">Pages</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <!-- HOME / BOOKING SECTION -->
+    <section id="home" class="booking-section">
+        <div class="overlay">
+            <div class="tabs">
+                <button class="tab active" data-tab="flights">Flights</button>
+                <button class="tab" data-tab="hotels">Hotels</button>
+                <button class="tab" data-tab="carhire">Car Hire</button>
+            </div>
+
+            <!-- FLIGHTS FORM -->
+            <form id="flights" class="tab-content active">
+                <div class="trip-type">
+                    <label><input type="radio" name="trip" checked> Round Trip</label>
+                    <label><input type="radio" name="trip"> One Way</label>
+                    <label><input type="radio" name="trip"> Multi-city</label>
+                </div>
+
+                <div class="form-grid">
+                    <select>
+                        <option>New Delhi (DEL)</option>
+                        <option>Mumbai (BOM)</option>
+                        <option>London (LHR)</option>
+                    </select>
+                    <select>
+                        <option>New York (JFK)</option>
+                        <option>Dubai (DXB)</option>
+                        <option>Paris (CDG)</option>
+                    </select>
+                    <input type="date">
+                    <input type="date">
+                    <select>
+                        <option>Economy</option>
+                        <option>Premium Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                    <div class="passenger-selector">
+                        <label>Adults</label>
+                        <input type="number" min="1" value="1">
+                        <label>Children</label>
+                        <input type="number" min="0" value="0">
+                    </div>
+                    <button class="search-btn">Search Flight</button>
+                </div>
+            </form>
+
+            <!-- HOTELS FORM -->
+            <form id="hotels" class="tab-content">
+                <div class="form-grid">
+                    <input type="text" placeholder="Destination">
+                    <input type="date">
+                    <input type="date">
+                    <input type="number" min="1" value="1" placeholder="Guests">
+                    <button class="search-btn">Search Hotels</button>
+                </div>
+            </form>
+
+            <!-- CAR HIRE FORM -->
+            <form id="carhire" class="tab-content">
+                <div class="form-grid">
+                    <input type="text" placeholder="Pick-up Location">
+                    <input type="date">
+                    <input type="date">
+                    <button class="search-btn">Search Cars</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- AIRLINES -->
+    <section class="airlines">
+        <div class="airline-logos">
+            <img src="image/Emirates-removebg-preview.png" alt="Emirates">
+            <img src="image/Air_india.png" alt="Air India">
+            <img src="image/British-removebg-preview.png" alt="British Airways">
+            <img src="image/Indigo-removebg-preview.png" alt="Indigo">
+            <img src="image/Singapore-removebg-preview.png" alt="Singapore Airlines">
+            <img src="image/american-removebg-preview.png" alt="American Airlines">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="content-section">
+        <h2>About SkyBooking</h2>
+        <p>SkyBooking is your all-in-one travel companion. Search flights, hotels, and cars in one place with real-time prices and easy booking.</p>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="content-section">
+        <h2>Travel Blog</h2>
+        <p>Get inspired with travel tips, guides, and destination ideas.</p>
+    </section>
+
+    <!-- PAGES -->
+    <section id="pages" class="content-section">
+        <h2>Pages</h2>
+        <p>Explore our privacy policy, terms of service, and more.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacts" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Email: support@skybooking.com | Phone: +91 98765 43210</p>
+    </section>
+
+    <script src="Task_2.js"></script>
+</body>
+</html>
