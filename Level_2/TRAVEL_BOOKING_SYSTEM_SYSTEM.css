@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+/* HEADER */
+.header {
+    background: #004aad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #ffd700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* BOOKING SECTION */
+.booking-section {
+    background: url('https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    padding: 40px;
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tab {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.tab.active {
+    background: #ffd700;
+    color: black;
+}
+
+.tab-content {
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+.tab-content.active {
+    display: block;
+}
+
+.trip-type {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.trip-type label {
+    font-size: 14px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 10px;
+}
+.form-grid select, 
+.form-grid input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #ffd700;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.search-btn:hover {
+    background: orange;
+}
+
+/* AIRLINE LOGOS */
+.airlines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    background: white;
+}
+.airlines img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.airlines img:hover {
+    transform: scale(1.1);
+}
