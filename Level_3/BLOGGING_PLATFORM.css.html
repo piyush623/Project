@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pantera — Blogging Platform (Demo)</title>
+  <link rel="stylesheet" href="BLOGGING_PLATFORM.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar">
+      <div class="brand">
+        <h1>Pantera<span class="dot">.</span></h1>
+        <p class="tagline">Creative React Blog Template</p>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-section">HOMEPAGES ▾</button>
+        <button class="nav-section">BLOG ▾</button>
+        <button class="nav-section">POSTS ▾</button>
+        <button class="nav-section">PAGES ▾</button>
+        <button class="nav-section">CONTACT US</button>
+      </nav>
+
+      <div class="social">
+        <small>© 2025. Design by Demo</small>
+        <div class="icons"> 
+          <span>f</span><span>t</span><span>ig</span><span>in</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <header class="topbar">
+        <h2>Our Stories</h2>
+        <div class="actions">
+          <input id="searchInput" type="search" placeholder="Enter your keyword?" />
+          <button id="createBtn" class="btn">Create Post</button>
+        </div>
+      </header>
+
+      <section id="postsGrid" class="posts-grid" aria-live="polite">
+        <!-- JS will inject Post cards here -->
+      </section>
+
+      <footer class="pagination">
+        <button id="prevPage" class="btn">‹ Prev</button>
+        <div id="pageInfo">Page 1</div>
+        <button id="nextPage" class="btn">Next ›</button>
+      </footer>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+      <div class="widget">
+        <h3>Popular Posts</h3>
+        <div id="popularList"></div>
+      </div>
+
+      <div class="widget">
+        <h3>Recent Posts</h3>
+        <ul id="recentList" class="recent-list"></ul>
+      </div>
+
+      <div class="widget">
+        <h3>Categories</h3>
+        <ul id="categoryList" class="category-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- CREATE POST MODAL -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <header>
+        <h3>Create New Post</h3>
+        <button id="closeModal" class="btn small">✕</button>
+      </header>
+      <form id="createForm">
+        <label>
+          Title
+          <input name="title" required />
+        </label>
+        <label>
+          Excerpt
+          <input name="excerpt" />
+        </label>
+        <label>
+          Cover image URL
+          <input name="coverImage" placeholder="https://images.unsplash.com/..." />
+        </label>
+        <label>
+          Tags (comma separated)
+          <input name="tags" />
+        </label>
+        <label>
+          Content
+          <textarea name="content" rows="6" required></textarea>
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="btn primary">Publish</button>
+          <button type="button" id="cancelModal" class="btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+        <p>© 2025 Piyush Kumar Pradhan. All rights reserved.</p>
+    </footer>
+  <script src="BLOGGING_PLATFORM.js"></script>
+</body>
+</html>

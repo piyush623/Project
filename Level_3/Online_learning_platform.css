@@ -1,0 +1,44 @@
+ 
+        /* Custom font for the main UI */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        .font-inter { font-family: 'Inter', sans-serif; }
+        /* A more elegant font for the certificate */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        .font-signature { font-family: 'Dancing Script', cursive; }
+        
+        body {
+            background-color: #f3f4f6;
+        }
+
+        /* Hide the quiz and certificate views by default */
+        #quiz-view, #certificate-view {
+            display: none;
+        }
+
+        /* Basic modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 24rem;
+        }
+  
